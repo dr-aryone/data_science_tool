@@ -69,7 +69,7 @@ import mlflow.sklearn
 
 
 ```python
-mlflow.tracking._DEFAULT_USER_ID = 'Edward Ma'
+mlflow.tracking._DEFAULT_USER_ID = 'https://github.com/makcedward/'
 ```
 
 ##### Set the tracking destination
@@ -101,7 +101,7 @@ tuned_parameters = [
 
 cnt = 0 
 for param in tuned_parameters:
-    with mlflow.start_run(source_name='medium.com makcedward', source_version='1.0.' + str(cnt)):
+    with mlflow.start_run(source_name='https://medium.com/@makcedward/', source_version='1.0.' + str(cnt)):
         lr = LogisticRegression(max_iter=param['max_iter'], penalty=param['penalty'], solver=param['solver'])
         lr.fit(x_train, y_train)
         y_pred = lr.predict(x_test)
@@ -122,10 +122,10 @@ for param in tuned_parameters:
 
     req_body: {
       "experimentId": "0",
-      "userId": "Edward Ma",
+      "userId": "https://github.com/makcedward/",
       "sourceType": "LOCAL",
-      "sourceName": "medium.com makcedward",
-      "startTime": "1528651551644",
+      "sourceName": "https://medium.com/@makcedward/",
+      "startTime": "1528651944413",
       "sourceVersion": "1.0.0"
     }
     
@@ -136,26 +136,26 @@ for param in tuned_parameters:
 
     req_body: {
       "experimentId": "0",
-      "userId": "Edward Ma",
+      "userId": "https://github.com/makcedward/",
       "sourceType": "LOCAL",
-      "sourceName": "medium.com makcedward",
-      "startTime": "1528651560852",
+      "sourceName": "https://medium.com/@makcedward/",
+      "startTime": "1528651953631",
       "sourceVersion": "1.0.1"
     }
     req_body: {
       "experimentId": "0",
-      "userId": "Edward Ma",
+      "userId": "https://github.com/makcedward/",
       "sourceType": "LOCAL",
-      "sourceName": "medium.com makcedward",
-      "startTime": "1528651570041",
+      "sourceName": "https://medium.com/@makcedward/",
+      "startTime": "1528651962805",
       "sourceVersion": "1.0.2"
     }
     req_body: {
       "experimentId": "0",
-      "userId": "Edward Ma",
+      "userId": "https://github.com/makcedward/",
       "sourceType": "LOCAL",
-      "sourceName": "medium.com makcedward",
-      "startTime": "1528651579203",
+      "sourceName": "https://medium.com/@makcedward/",
+      "startTime": "1528651971968",
       "sourceVersion": "1.0.3"
     }
     
