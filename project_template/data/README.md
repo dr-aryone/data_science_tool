@@ -1,2 +1,0 @@
-- raw: Storing the raw result which is generated from "preparation" folder code.
-- processed: To shorten model training time, it is a good idea to persist processed data. It should be generated from "processing" folder.
